@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM IN CSS</title>
+    <style>
+        h1{
+            background-color: antiquewhite;
+        }
+        div h2{
+            background-color: aquamarine;
+        }
+       /* div input{
+        background-color: aqua;
+       } */
+       .name1 [id="fname"]{
+            background-color: gray;
+        }
+        .name1 [id="sname"]{
+            background-color: gray;
+        }
+        .name1 [id="fathername"]{
+            background-color: wheat;
+        }
+        .name1 [id="mothername"]{
+            background-color: wheat;
+        }
+        .name1 [id="num"]{
+            background-color: yellow;
+        }
+        .name1 [id="ph"]{
+            background-color: aqua;
+        }
+        .name1 [id="mail"]{
+            background-color: lime;
+        }
+        .name1 [id="address"]{
+            background-color: fuchsia;
+        }
+        .name1 [value="signup"]{
+            background-color: lightblue;
+        }
+        .name1 [id|="gender"]{
+            background-color: blue;
+        }
+        .name1 [id="education"]{
+            background-color: orchid;
+        }
+     
+
+       
+
+    </style>
+</head>
+
+<body>
+    <h1>USING SELECTORS FOR FORM</h1>
+    <div>
+        <h2>PERSONAL DETAILS</h2>
+
+        <form>
+            <div class="name1">
+                <table>
+                    <tr>
+                        <td><label for="fname">Firstname:</label></td>
+                        <td><input type="text" id="fname" name="fname" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sname">Lastname:</label></td>
+                        <td> <input type="text" id="sname" name="sname" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fathername">Fathername:</label></td>
+                        <td><input type="text" id="fathername" name="fathername" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mothername">Mothername :</label></td>
+                        <td><input type="text" id="mothername" name="mothername" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num">Id number :</label></td>
+                        <td><input type="number" id="num" name="num" required></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="ph">Mobile number:</label></td>
+                        <td><input type="tel" id="ph" name="phone" required pattern="[0-9]{10}"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mail">email Id :</label></td>
+                        <td><input type="mail" id="mail" name="mail" required pattern="[a-z]{10}"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="address">Address :</label></td>
+                        <td><input type="text" id="address" name="address" required></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+
+                </table>
+            
+           
+                <table>
+
+                    <tr>
+                        <td><label for="gender">Select your gender:</label></td>
+                    </tr>
+                </table>
+                
+                <table>
+                    <tr>
+                        <td><input type="radio" id="gender" name="gender" required>Male</td>
+                        <td><input type="radio" id="gender" name="gender" required>Female</td>
+                        <td><input type="radio" id="gender" name="gender" required>Others</td>
+                </table>
+          
+                <table>
+                    <tr>
+                        <td>
+            <label for="education">College name        :</label></td>
+            <td><input type="text" id="education" name="education" required></td></tr>
+            <tr>
+            <td><label for="education">Stream              :</label></td>
+                <td><input type="text" id="education" name="education" required></td></tr>
+                <tr>
+                <td><label for="education">Aggregate percentage:</label></td>
+                    <td><input type="text" id="education" name="education" required></td></tr>
+                   
+            </table>
+    
+
+
+    <table>
+                <tr>
+            <td><input type="submit" value="signup" /></td>
+        </tr>
+
+
+    </table>
+    </form>
+    </div>
+</body>
+
+</html>
